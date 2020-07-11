@@ -1,6 +1,3 @@
-server:
-  port: 8001
-
 spring:
   application:
     name: item-service
@@ -13,3 +10,16 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 30
 
+---
+server:
+  port: 8001
+
+spring:
+  profiles: itemservice01
+
+---
+server:
+  port: 8002
+
+spring:
+  profiles: itemservice02
